@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable Box</title>
+    <style>
+        /* Style for the box */
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            line-height: 200px;
+            cursor: pointer;
+        }
+
+        /* Style for the box when opened */
+        .box.opened {
+            background-color: #e74c3c;
+        }
+
+        /* Style for the text inside the box */
+        .box-text {
+            display: none;
+        }
+
+        /* Style for the text when the box is opened */
+        .box.opened .box-text {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Clickable box -->
+<div class="box" onclick="toggleBox(this)">
+    <div class="SIKE BITCH">SIKE BITCH</div>
+</div>
+
+<!-- JavaScript to handle box opening/closing -->
+<script>
+    function toggleBox(box) {
+        box.classList.toggle('opened');
+    }
+</script>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable Box</title>
+    <style>
+        /* Style for the box */
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            line-height: 200px;
+            cursor: pointer;
+        }
+
+        /* Style for the text inside the box */
+        .box-text {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Clickable box -->
+<div class="box" onclick="showText(this)">
+    <div class="youre a bitch">bitch you are </div>
+</div>
+
+<!-- JavaScript to handle showing text on box click -->
+<script>
+    function showText(box) {
+        // Get the inner text element
+        var boxText = box.querySelector('.BITCh');
+
+        // Toggle the display property to show or hide the text
+        boxText.style.display = (boxText.style.display === 'none' || boxText.style.display === '') ? 'block' : 'none';
+    }
+</script>
+
+</body>
+</html>
